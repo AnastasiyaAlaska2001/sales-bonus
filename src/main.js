@@ -51,6 +51,9 @@ function analyzeSalesData(data, options) {
   if (
     !data ||
     !Array.isArray(data?.products) ||
+    !data.products.length ||
+    !data.sellers.length ||
+    !data.purchase_records.length ||
     !Array.isArray(data?.sellers) ||
     !Array.isArray(data?.purchase_records)
   ) {
